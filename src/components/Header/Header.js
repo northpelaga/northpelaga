@@ -2,11 +2,10 @@ import React from 'react';
 
 import {Link} from 'gatsby';
 
-import Logo from './assets/logo.svg';
 import Telegram from './assets/telegram.svg';
 import Mail from './assets/mail.svg';
 
-import {Wrapper, Nav, NavItem, linkCss} from './styled';
+import {Wrapper, Logo, Nav, NavItem, NavText, linkCss} from './styled';
 
 const Header = () => {
   const links = [
@@ -26,15 +25,17 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
 
       <Nav>
         {links.map((link, index) => (
-          <NavItem key={index}>
-            <Link className={linkCss} activeClassName="active" to={link.to}>
-              {link.text}
-            </Link>
-          </NavItem>
+          <Link className={linkCss} activeClassName="active" to={link.to}>
+            <NavItem key={index}>
+              <NavText>{link.text}</NavText>
+            </NavItem>
+          </Link>
         ))}
 
         <NavItem>

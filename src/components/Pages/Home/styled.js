@@ -4,10 +4,16 @@ import {colWidth, lineWidth} from '../../../constants';
 
 export const Wrapper = styled.main`
   margin: auto 0;
+
+  .Cursor {
+    display: none;
+  }
 `;
 
 export const Greeting = styled.div`
   display: flex;
+
+  height: 73px;
 `;
 
 export const GreetingItem = styled.div`
@@ -29,4 +35,6 @@ export const About = styled.p`
   line-height: 25px;
 
   color: #1b1b1b;
+
+  transition: opacity 1s ease-in-out;
 `;

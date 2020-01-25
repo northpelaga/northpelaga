@@ -2,18 +2,31 @@ import React from 'react';
 
 import {Wrapper, Greeting, GreetingItem, About} from './styled';
 
+import Typist from 'react-typist';
+
 const Home = () => {
+  const [typed, setTyped] = React.useState(false);
+
   return (
     <Wrapper>
-      <Greeting>
-        <GreetingItem col={2}>Hey.</GreetingItem>
+      <Typist
+        onTypingDone={() => {
+          setTimeout(() => {
+            setTyped(true);
+          }, 500);
+        }}
+      >
+        <Greeting>
+          <Typist.Delay ms={500} />
+          <GreetingItem col={2}>Hey.</GreetingItem>
+          <Typist.Delay ms={500} />
+          <GreetingItem col={3}>Privetik.</GreetingItem>
+          <Typist.Delay ms={500} />
+          <GreetingItem col={2}>Hola.</GreetingItem>
+        </Greeting>
+      </Typist>
 
-        <GreetingItem col={3}>Privetik.</GreetingItem>
-
-        <GreetingItem col={2}>Hola.</GreetingItem>
-      </Greeting>
-
-      <About>
+      <About style={{opacity: typed ? 1 : 0}}>
         I’m Polina, a young Russian designer located in Novosibirsk.
         <br />
         <br />I specialize in lorem ipsum dolor sit amet, consectetur adipiscing
