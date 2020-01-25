@@ -1,5 +1,5 @@
 # test comment
-image: docker:19.03
+image: docker:19.03.1
 
 stages:
   - build
@@ -8,10 +8,11 @@ stages:
 variables:
   IMAGE: $REGISTRY_HOST/northpelaga/portfolio:$CI_COMMIT_SHA
   LATEST_IMAGE: $REGISTRY_HOST/northpelaga/portfolio:latest
+  DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: '/certs'
 
 services:
-  - docker:19.03-dind
+  - docker:19.03.1-dind
 
 before_script:
   - docker info
