@@ -9,7 +9,7 @@ const Work = ({work}) => {
         <Title>{work.title}</Title>
       </Header>
 
-      <Preview src={work.full.publicURL} />
+      <Preview fixed={work.full.childImageSharp.fixed} />
     </Wrapper>
   );
 };

@@ -1,5 +1,7 @@
 import {styled} from 'linaria/react';
 
+import Img from 'gatsby-image';
+
 import {colWidth, lineWidth} from '../../../constants';
 
 const dateWidth = colWidth + lineWidth * 2;
@@ -26,7 +28,7 @@ export const Title = styled.h1`
   color: #1b1b1b;
 `;
 
-export const Preview = styled.img`
+export const Preview = styled(Img)`
   display: block;
   margin-top: 40px;
   width: 100%;

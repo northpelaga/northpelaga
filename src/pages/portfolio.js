@@ -31,7 +31,13 @@ export const query = graphql`
           tag
           year
           preview {
-            publicURL
+            childImageSharp {
+              # Specify the image processing specifications right in the query.
+              # Makes it trivial to update as your page's design changes.
+              fixed(width: 606) {
+                ...GatsbyImageSharpFixed
+              }
+            }
           }
         }
       }

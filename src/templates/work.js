@@ -11,6 +11,8 @@ const WorkTemplate = props => {
     data: {worksJson: work}
   } = props;
 
+  console.log(work);
+
   return (
     <Layout>
       <Work work={work} />
@@ -25,11 +27,14 @@ export const query = graphql`
       title
       tag
       year
-      preview {
-        publicURL
-      }
       full {
-        publicURL
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fixed(width: 606) {
+            ...GatsbyImageSharpFixed
+          }
+        }
       }
     }
   }

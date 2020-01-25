@@ -38,7 +38,7 @@ const Work = ({work}) => {
       </Header>
       <Content>
         <Link to={fullUrl}>
-          <Preview src={work.preview.publicURL} />
+          <Preview fixed={work.preview.childImageSharp.fixed} />
         </Link>
       </Content>
     </Wrapper>
