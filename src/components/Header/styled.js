@@ -21,6 +21,10 @@ export const NavItem = styled.div`
 
   svg {
     display: block;
+
+    &:not(:hover) path:last-child {
+      display: none;
+    }
   }
 `;
 
