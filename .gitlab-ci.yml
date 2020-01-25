@@ -30,8 +30,6 @@ build:
     - docker push $LATEST_IMAGE
 deploy:
   stage: deploy
-  variables:
-    SCHEME_PATH: /home/gitlab-runner/run/northpelaga
   environment:
     name: dev
   only:

@@ -31,12 +31,16 @@ export const Content = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  position: relative;
+  z-index: 2;
 `;
 
 export const Grid = styled.div`
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   display: flex;
+  pointer-events: none;
 
   width: ${width}px;
   left: 50%;
