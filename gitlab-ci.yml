@@ -1,3 +1,5 @@
+image: docker:19.03.1
+
 stages:
   - build
   - deploy
@@ -5,6 +7,10 @@ stages:
 variables:
   IMAGE: $REGISTRY_HOST/northpelaga/portfolio:$CI_COMMIT_SHA
   LATEST_IMAGE: $REGISTRY_HOST/northpelaga/portfolio:latest
+  DOCKER_TLS_CERTDIR: '/certs'
+
+services:
+  - docker:19.03.1-dind
 
 before_script:
   - docker info
