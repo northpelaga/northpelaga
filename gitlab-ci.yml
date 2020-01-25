@@ -16,7 +16,7 @@ services:
 before_script:
   - docker info
   - apk --update add openssh-client
-  - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_HOST
+  - docker login -u $REGISTRY_USER $REGISTRY_HOST --password-stdin < $REGISTRY_PASSWORD
 
 build:
   tags:
