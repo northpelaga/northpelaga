@@ -1,6 +1,6 @@
 import {styled} from 'linaria/react';
 
-import Img from 'gatsby-image';
+import Img from 'gatsby-image/withIEPolyfill';
 
 import {colWidth, lineWidth} from '../../../../../constants';
 
