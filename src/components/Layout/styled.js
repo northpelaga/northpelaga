@@ -22,6 +22,7 @@ export const Wrapper = styled.div`
 
 export const BackgroundFill = styled.div`
   background-color: #ffffff;
+  position: relative;
 `;
 
 export const Content = styled.div`
