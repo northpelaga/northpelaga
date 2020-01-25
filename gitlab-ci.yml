@@ -1,0 +1,45 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  IMAGE: $REGISTRY_HOST/northpelaga/portfolio:$CI_COMMIT_SHA
+  LATEST_IMAGE: $REGISTRY_HOST/northpelaga/portfolio:latest
+
+before_script:
+  - docker info
+  - apk --update add openssh-client
+  - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_HOST
+
+build:
+  tags:
+    - front
+  stage: build
+  script:
+    - docker pull $LATEST_IMAGE || true
+    - docker build -t $IMAGE -t $LATEST_IMAGE -f Dockerfile .
+    - docker push $IMAGE
+    - docker push $LATEST_IMAGE
+deploy:
+  stage: deploy
+  variables:
+    SCHEME_PATH: /home/gitlab-runner/run/northpelaga
+  environment:
+    name: dev
+  only:
+    - dev
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - touch ~/.ssh/known_hosts
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - export DOCKER_HOST="${SERVER_ADDRESS}"
+    - mkdir -p /tmp/config && cd /tmp/config
+    - mv $APP_ENV ./app_env
+    - mv $SERVICE_CONFIG ./docker-compose.yml
+    - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_HOST
+    - docker pull $IMAGE
+    - docker stack deploy --compose-file docker-compose.yml northpelaga
