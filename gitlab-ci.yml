@@ -38,7 +38,6 @@ deploy:
     - chmod 644 ~/.ssh/known_hosts
     - export DOCKER_HOST="${SERVER_ADDRESS}"
     - mkdir -p /tmp/config && cd /tmp/config
-    - mv $APP_ENV ./app_env
     - mv $SERVICE_CONFIG ./docker-compose.yml
     - docker login -u $REGISTRY_USER -p $REGISTRY_PASSWORD $REGISTRY_HOST
     - docker pull $IMAGE
