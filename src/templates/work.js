@@ -13,7 +13,11 @@ const WorkTemplate = props => {
 
   console.log(work);
 
-  return <Work work={work} />;
+  return (
+    <Page noEnter>
+      <Work work={work} />
+    </Page>
+  );
 };
 
 export const query = graphql`
