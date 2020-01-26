@@ -38,6 +38,22 @@ export const Nav = styled.div`
 
 export const NavText = styled.span`
   position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    height: 12px;
+    background-color: #f6f6f6;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: -3px;
+
+    transition: all 0.2s ease-in-out;
+
+    opacity: 0;
+    transform: translate(0, 5px);
+  }
 `;
 
 export const NavItem = styled.div`
@@ -74,17 +90,13 @@ export const linkCss = css`
   &:hover,
   &.active {
     font-weight: 600;
+  }
 
+  &.active {
     ${NavText} {
       &::before {
-        position: absolute;
-        content: '';
-        height: 12px;
-        background-color: #f6f6f6;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        top: -3px;
+        opacity: 1;
+        transform: translate(0, 0px);
       }
     }
   }

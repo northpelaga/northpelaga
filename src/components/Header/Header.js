@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Link} from 'gatsby';
+import TransitionLink from 'gatsby-plugin-transition-link';
 
 import Telegram from './assets/telegram.svg';
 import Mail from './assets/mail.svg';
@@ -31,11 +32,17 @@ const Header = () => {
 
       <Nav>
         {links.map((link, index) => (
-          <Link className={linkCss} activeClassName="active" to={link.to}>
+          <TransitionLink
+            className={linkCss}
+            activeClassName="active"
+            to={link.to}
+            exit={{length: 0.5}}
+            entry={{length: 0.5}}
+          >
             <NavItem key={index}>
               <NavText>{link.text}</NavText>
             </NavItem>
-          </Link>
+          </TransitionLink>
         ))}
 
         <NavItem>

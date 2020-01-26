@@ -5,6 +5,12 @@ module.exports = {
     author: `@gatsbyjs`
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-transition-link',
+      options: {
+        layout: require.resolve(`./src/components/Layout/Layout`)
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {

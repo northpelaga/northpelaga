@@ -2,7 +2,6 @@ import React from 'react';
 
 import {graphql} from 'gatsby';
 
-import {Layout} from '../components';
 import {Portfolio} from '../components/Pages';
 
 const PortfolioPage = props => {
@@ -14,11 +13,7 @@ const PortfolioPage = props => {
 
   const works = edges.map(({node}) => node);
 
-  return (
-    <Layout>
-      <Portfolio works={works} />
-    </Layout>
-  );
+  return <Portfolio works={works} />;
 };
 
 export const query = graphql`

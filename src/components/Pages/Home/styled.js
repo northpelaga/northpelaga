@@ -5,6 +5,11 @@ import {colWidth, lineWidth} from '../../../constants';
 export const Wrapper = styled.main`
   margin: auto 0;
 
+  display: flex;
+  min-height: calc(100vh - 56px - 80px);
+  flex-direction: column;
+  justify-content: center;
+
   .Cursor {
     display: none;
   }

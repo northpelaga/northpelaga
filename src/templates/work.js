@@ -2,9 +2,9 @@ import React from 'react';
 
 import {graphql} from 'gatsby';
 
-import {Layout} from '../components';
-
 import {Work} from './components';
+
+import Page from '../components/Page/Page';
 
 const WorkTemplate = props => {
   const {
@@ -13,11 +13,7 @@ const WorkTemplate = props => {
 
   console.log(work);
 
-  return (
-    <Layout>
-      <Work work={work} />
-    </Layout>
-  );
+  return <Work work={work} />;
 };
 
 export const query = graphql`
