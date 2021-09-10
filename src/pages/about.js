@@ -5,11 +5,11 @@ import SEO from '../components/seo';
 import {About} from '../components/Pages';
 
 const AboutPage = () => (
-  <Rect.Fragment>
+  <React.Fragment>
     <SEO title="About" />
 
     <About />
-  </Rect.Fragment>
+  </React.Fragment>
 );
 
 export default AboutPage;
