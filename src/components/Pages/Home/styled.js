@@ -19,10 +19,11 @@ export const Greeting = styled.div`
   display: flex;
 
   height: 73px;
+  margin-left: -4px;
 `;
 
 export const GreetingItem = styled.div`
-  width: ${p => p.col * (colWidth + lineWidth)}px;
+  width: ${(p) => p.col * (colWidth + lineWidth)}px;
 
   font-weight: bold;
   font-size: 60px;

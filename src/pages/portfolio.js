@@ -2,18 +2,26 @@ import React from 'react';
 
 import {graphql} from 'gatsby';
 
+import SEO from '../components/seo';
+
 import {Portfolio} from '../components/Pages';
 
-const PortfolioPage = props => {
+const PortfolioPage = (props) => {
   const {
     data: {
-      allWorksJson: {edges}
-    }
+      allWorksJson: {edges},
+    },
   } = props;
 
   const works = edges.map(({node}) => node);
 
-  return <Portfolio works={works} />;
+  return (
+    <React.Fragment>
+      <SEO title="Portfolio" />
+
+      <Portfolio works={works} />
+    </React.Fragment>
+  );
 };
 
 export const query = graphql`

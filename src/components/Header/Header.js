@@ -12,16 +12,16 @@ const Header = () => {
   const links = [
     {
       text: 'Home',
-      to: '/'
+      to: '/',
     },
     {
       text: 'Work',
-      to: '/portfolio'
+      to: '/portfolio',
     },
     {
       text: 'About',
-      to: '/about'
-    }
+      to: '/about',
+    },
   ];
 
   return (
@@ -45,13 +45,17 @@ const Header = () => {
           </TransitionLink>
         ))}
 
-        <NavItem>
-          <Telegram />
-        </NavItem>
+        <a href="https://t.me/northpelaga" target="_blank" rel="noreferrer">
+          <NavItem>
+            <Telegram />
+          </NavItem>
+        </a>
 
-        <NavItem>
-          <Mail />
-        </NavItem>
+        <a href="mailto:northpelaga@gmail.com">
+          <NavItem>
+            <Mail />
+          </NavItem>
+        </a>
       </Nav>
     </Wrapper>
   );

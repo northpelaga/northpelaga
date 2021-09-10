@@ -1,3 +1,4 @@
+import {css} from 'linaria';
 import {styled} from 'linaria/react';
 
 import {numberOfLines, colWidth, lineWidth} from '../../constants';
@@ -8,15 +9,23 @@ export const Wrapper = styled.div`
   padding: 28px;
   background-color: #f2f2f2;
 
-  :global(body) {
-    font-family: Montserrat, arial, sans-serif;
+  .tl-edges {
+    overflow-x: visible !important;
   }
+`;
 
-  :global(*) {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
+export const globals = css`
+  :global() {
+    body {
+      font-family: Montserrat, arial, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      outline: none;
+      box-sizing: border-box;
+    }
   }
 `;
 
