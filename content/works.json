@@ -16,6 +16,14 @@
     "full": "images/ERG 2020.jpg"
   },
   {
+    "id": "InCase",
+    "title": "InCase",
+    "year": "2019",
+    "tag": "UI",
+    "preview": "preview/InCase_pre.png",
+    "full": "images/InCase 2019.jpg"
+  },
+  {
     "id": "Uikit",
     "title": "UIKIT",
     "year": "2019",
@@ -46,14 +54,6 @@
     "tag": "UI",
     "preview": "preview/BiznesInk_pre.png",
     "full": "images/BiznesInk.jpg"
-  },
-  {
-    "id": "InCase",
-    "title": "InCase",
-    "year": "2019",
-    "tag": "UI",
-    "preview": "preview/InCase_pre.png",
-    "full": "images/InCase 2019.jpg"
   },
   {
     "id": "TicketsCloud",
