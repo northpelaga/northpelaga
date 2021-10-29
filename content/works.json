@@ -1,5 +1,13 @@
 [
   {
+    "id": "ERG",
+    "title": "ERG",
+    "year": "2020",
+    "tag": "UI",
+    "preview": "preview/ERG_pre.png",
+    "full": "images/ERG 2020.jpg"
+  },
+  {
     "id": "AlessiaShem",
     "title": "Alessia Shem",
     "year": "2020",
@@ -8,12 +16,12 @@
     "full": "images/AlesiaShem 2020.jpg"
   },
   {
-    "id": "ERG",
-    "title": "ERG",
-    "year": "2020",
+    "id": "InCase",
+    "title": "InCase",
+    "year": "2019",
     "tag": "UI",
-    "preview": "preview/ERG_pre.png",
-    "full": "images/ERG 2020.jpg"
+    "preview": "preview/InCase_pre.png",
+    "full": "images/InCase 2019.jpg"
   },
   {
     "id": "Uikit",
@@ -46,14 +54,6 @@
     "tag": "UI",
     "preview": "preview/BiznesInk_pre.png",
     "full": "images/BiznesInk.jpg"
-  },
-  {
-    "id": "InCase",
-    "title": "InCase",
-    "year": "2019",
-    "tag": "UI",
-    "preview": "preview/InCase_pre.png",
-    "full": "images/InCase 2019.jpg"
   },
   {
     "id": "TicketsCloud",
