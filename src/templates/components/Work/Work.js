@@ -1,4 +1,5 @@
 import React from 'react';
+import {GatsbyImage} from 'gatsby-plugin-image';
 
 import {Wrapper, Header, Title, Preview} from './styled';
 
@@ -9,7 +10,11 @@ const Work = ({work}) => {
         <Title>{work.title}</Title>
       </Header>
 
-      <Preview fixed={work.full.childImageSharp.fixed} />
+      <GatsbyImage
+        style={{marginTop: '40px'}}
+        width={100}
+        image={work.full.childImageSharp.gatsbyImageData}
+      />
     </Wrapper>
   );
 };

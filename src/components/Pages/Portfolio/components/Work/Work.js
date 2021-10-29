@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {GatsbyImage} from 'gatsby-plugin-image';
+
 import {Link} from 'gatsby';
 
 import {
@@ -11,7 +13,7 @@ import {
   Title,
   Preview,
   Tag,
-  TagWrapper
+  TagWrapper,
 } from './styled';
 
 const Work = ({work}) => {
@@ -38,7 +40,10 @@ const Work = ({work}) => {
       </Header>
       <Content>
         <Link to={fullUrl}>
-          <Preview fixed={work.preview.childImageSharp.fixed} />
+          <GatsbyImage
+            width={100}
+            image={work.preview.childImageSharp.gatsbyImageData}
+          />
         </Link>
       </Content>
     </Wrapper>

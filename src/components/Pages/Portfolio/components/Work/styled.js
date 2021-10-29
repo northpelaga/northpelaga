@@ -1,6 +1,7 @@
 import {styled} from 'linaria/react';
 
-import Img from 'gatsby-image/withIEPolyfill';
+// import Img from 'gatsby-image/withIEPolyfill';
+// import {GatsbyImage} from 'gatsby-plugin-image';
 
 import {colWidth, lineWidth} from '../../../../../constants';
 
@@ -94,7 +95,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Preview = styled(Img)`
-  display: block;
-  width: 100%;
-`;
+// export const Preview = styled(GatsbyImage)`
+//   display: block;
+//   width: 100%;
+// `;

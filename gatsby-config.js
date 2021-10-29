@@ -30,6 +30,10 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    'gatsby-plugin-linaria',
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
@@ -41,7 +45,6 @@ module.exports = {
     //     display: `minimal-ui`,
     //   },
     // },
-    'gatsby-plugin-linaria',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

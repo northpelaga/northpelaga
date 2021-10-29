@@ -6,9 +6,9 @@ import {Work} from './components';
 
 import Page from '../components/Page/Page';
 
-const WorkTemplate = props => {
+const WorkTemplate = (props) => {
   const {
-    data: {worksJson: work}
+    data: {worksJson: work},
   } = props;
 
   console.log(work);
@@ -21,7 +21,7 @@ const WorkTemplate = props => {
 };
 
 export const query = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     worksJson(id: {eq: $id}) {
       id
       title
@@ -31,9 +31,7 @@ export const query = graphql`
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
-          fixed(width: 606) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 606, layout: FIXED)
         }
       }
     }
