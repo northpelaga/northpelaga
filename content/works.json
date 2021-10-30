@@ -56,20 +56,20 @@
     "full": "images/BiznesInk.jpg"
   },
   {
-    "id": "TicketsCloud",
-    "title": "Analytics by TicketsCloud",
-    "year": "2018",
-    "tag": "UI",
-    "preview": "preview/TC_pre.png",
-    "full": "images/Analytics by TicketsCloud 2018.jpg"
-  },
-  {
     "id": "ChatForma",
     "title": "Chatforma",
     "year": "2018",
     "tag": "UI",
     "preview": "preview/Chatforma_pre.png",
     "full": "images/Chatforma 2018.jpg"
+  },
+  {
+    "id": "TicketsCloud",
+    "title": "Analytics by TicketsCloud",
+    "year": "2018",
+    "tag": "UI",
+    "preview": "preview/TC_pre.png",
+    "full": "images/Analytics by TicketsCloud 2018.jpg"
   },
   {
     "id": "Atapart",
