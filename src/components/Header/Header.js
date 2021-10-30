@@ -18,10 +18,10 @@ const Header = () => {
       text: 'Work',
       to: '/portfolio',
     },
-    {
-      text: 'About',
-      to: '/about',
-    },
+    // {
+    //   text: 'About',
+    //   to: '/about',
+    // },
   ];
 
   return (
