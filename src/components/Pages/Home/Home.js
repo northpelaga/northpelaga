@@ -30,11 +30,11 @@ const Home = () => {
         </Typist>
 
         <About style={{opacity: typed ? 1 : 0}}>
-          I’m Polina, a young Russian designer located in Novosibirsk.
+          Я Полина, UI/UX дизайнер из Новосибирска.
           <br />
-          <br />I specialize in lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
+          <br />С 2018 года работала в команде с разработчиками, где занималась
+          созданием дизайна сайтов и мобильных приложений, дорабатывала и
+          поддерживала макеты существующих систем в Sketch/Figma.
         </About>
       </Wrapper>
     </Page>
