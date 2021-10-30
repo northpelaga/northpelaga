@@ -16,20 +16,20 @@
     "full": "images/AlesiaShem 2020.jpg"
   },
   {
-    "id": "InCase",
-    "title": "InCase",
-    "year": "2019",
-    "tag": "UI",
-    "preview": "preview/InCase_pre.png",
-    "full": "images/InCase 2019.jpg"
-  },
-  {
     "id": "Uikit",
     "title": "UIKIT",
     "year": "2019",
     "tag": "UI",
     "preview": "preview/uikit_pre.jpg",
     "full": "images/UI Kit 2019.jpg"
+  },
+  {
+    "id": "InCase",
+    "title": "InCase",
+    "year": "2019",
+    "tag": "UI",
+    "preview": "preview/InCase_pre.png",
+    "full": "images/InCase 2019.jpg"
   },
   {
     "id": "RSV",
