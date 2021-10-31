@@ -20,6 +20,7 @@ export const Date = styled.div`
 
   position: relative;
   padding-left: 20px;
+  margin-left: ${(props) => props.marginLeft || 'null'};
 
   &::before {
     position: absolute;
@@ -53,7 +54,7 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
 
-  padding-left: ${p => (p.withDate ? 0 : dateWidth)}px;
+  padding-left: ${(p) => (p.withDate ? 0 : dateWidth)}px;
 `;
 
 export const TagWrapper = styled.div`
