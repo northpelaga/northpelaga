@@ -30,8 +30,6 @@ export const query = graphql`
       year
       full {
         childImageSharp {
-          # Specify the image processing specifications right in the query.
-          # Makes it trivial to update as your page's design changes.
           gatsbyImageData(width: 606, layout: FIXED)
         }
       }
