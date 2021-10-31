@@ -41,14 +41,6 @@
     "full": "images/RSV.jpg"
   },
   {
-    "id": "BusinessInk",
-    "title": "НИУ ВШЭ Бизнес-инкубатор",
-    "year": "2019",
-    "tag": "UI",
-    "preview": "preview/BiznesInk_pre.png",
-    "full": "images/BiznesInk.jpg"
-  },
-  {
     "id": "Atamore",
     "title": "Atamore",
     "year": "2019",
@@ -56,6 +48,14 @@
     "link": "atamore.com",
     "preview": "preview/Atamore_pre.png",
     "full": "images/Atamore 2019.jpg"
+  },
+  {
+    "id": "BusinessInk",
+    "title": "НИУ ВШЭ Бизнес-инкубатор",
+    "year": "2019",
+    "tag": "UI",
+    "preview": "preview/BiznesInk_pre.png",
+    "full": "images/BiznesInk.jpg"
   },
   {
     "id": "TicketsCloud",

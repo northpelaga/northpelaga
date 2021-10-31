@@ -18,7 +18,6 @@ const Work = ({work}) => {
           </Indent>
         )}
       </Header>
-
       <GatsbyImage
         style={{marginTop: '40px'}}
         width={100}
