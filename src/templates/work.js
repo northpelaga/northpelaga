@@ -26,6 +26,7 @@ export const query = graphql`
       id
       title
       tag
+      link
       year
       full {
         childImageSharp {

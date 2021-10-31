@@ -31,7 +31,7 @@ const Work = ({work}) => {
         )}
 
         <Title>
-          <Link to={fullUrl}>{work.title}</Link>
+          <Link to={fullUrl}>{work.title} </Link>
         </Title>
 
         <TagWrapper>

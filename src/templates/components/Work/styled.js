@@ -21,7 +21,33 @@ export const Header = styled.div`
   align-items: center;
 `;
 
+export const Indent = styled.div`
+  position: relative;
+  padding-left: 20px;
+  margin-left: 16px;
+
+  &::before {
+    position: absolute;
+    content: '';
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1b1b1b;
+    top: 7.5px;
+    left: -4px;
+  }
+`;
+
 export const Title = styled.h1`
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #1b1b1b;
+`;
+
+export const Link = styled.a`
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;

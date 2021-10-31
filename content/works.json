@@ -12,6 +12,7 @@
     "title": "Alessia Shem",
     "year": "2020",
     "tag": "UI",
+    "link": "alessiashem.com",
     "preview": "preview/AlessiaShem_pre.png",
     "full": "images/AlesiaShem 2020.jpg"
   },
@@ -44,6 +45,7 @@
     "title": "Atamore",
     "year": "2019",
     "tag": "UI",
+    "link": "atamore.com",
     "preview": "preview/Atamore_pre.png",
     "full": "images/Atamore 2019.jpg"
   },
@@ -60,6 +62,7 @@
     "title": "Analytics by TicketsCloud",
     "year": "2018",
     "tag": "UI",
+    "link": "apps.apple.com/ru/app/analytics-by-ticketscloud/id1422739071",
     "preview": "preview/TC_pre.png",
     "full": "images/Analytics by TicketsCloud 2018.jpg"
   },
@@ -68,6 +71,7 @@
     "title": "Chatforma",
     "year": "2018",
     "tag": "UI",
+    "link": "chatforma.com",
     "preview": "preview/Chatforma_pre.png",
     "full": "images/Chatforma 2018.jpg"
   },
